@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card:cardCornerRadius="@dimen/_10sdp"
+        card:cardUseCompatPadding="true"
+        card:cardElevation="@dimen/_3sdp"
+        card:contentPadding="@dimen/_3sdp"
+        tools:ignore="MissingConstraints" >
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/card_bg"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:id="@+id/shopImage"
+                android:background="@drawable/bg_iv"
+                android:src="@drawable/ic_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:drawableLeft="@drawable/ic_text_white"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/nameTv"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                card:layout_constraintLeft_toRightOf="@id/shopImage"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_location_white"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/descriptionTv"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                card:layout_constraintTop_toBottomOf="@id/nameTv"
+                card:layout_constraintLeft_toRightOf="@id/shopImage"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_phone_white"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/contactTv"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                card:layout_constraintTop_toBottomOf="@id/descriptionTv"
+                card:layout_constraintLeft_toRightOf="@id/shopImage"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

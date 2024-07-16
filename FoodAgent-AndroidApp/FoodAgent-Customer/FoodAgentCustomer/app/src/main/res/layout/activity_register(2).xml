@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent"
+    tools:context=".activites.RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@null"
+        android:id="@+id/re"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@null"
+            android:src="@drawable/ic_back"
+            android:id="@+id/btnBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="User Name"
+                android:id="@+id/NameEt"
+                android:textColorHint="@color/blue"
+                android:drawableLeft="@drawable/ic_text"
+                android:drawablePadding="5dp"
+                android:inputType="textCapWords"
+                />
+
+            <EditText
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_below="@id/NameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="Phone"
+                android:id="@+id/phoneEt"
+                android:textColorHint="@color/blue"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="5dp"
+                android:inputType="phone"/>
+
+
+            <EditText
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_below="@id/phoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="Address"
+                android:id="@+id/addressEt"
+                android:textColorHint="@color/blue"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_below="@id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="City"
+                android:id="@+id/cityEt"
+                android:textColorHint="@color/blue"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_below="@id/cityEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="Email"
+                android:id="@+id/EmailEt"
+                android:textColorHint="@color/blue"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_below="@id/EmailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_bg"
+                android:hint="Password"
+                android:id="@+id/passwordEt"
+                android:textColorHint="@color/blue"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                />
+
+
+
+            <Button
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:text="Register"
+                android:id="@+id/btnRegister"
+                android:layout_below="@id/passwordEt"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

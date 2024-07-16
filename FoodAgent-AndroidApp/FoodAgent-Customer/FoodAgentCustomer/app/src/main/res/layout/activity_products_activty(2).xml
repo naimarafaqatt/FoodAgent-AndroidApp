@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent"
+    tools:context=".activites.ProductsActivty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@null"
+        android:id="@+id/re"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@null"
+            android:src="@drawable/ic_back"
+            android:id="@+id/btnBack"/>
+
+
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_toEndOf="@id/btnBack"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_message"
+            android:background="@null"
+            android:id="@+id/messageBtn"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:id="@+id/tv"
+            android:layout_centerInParent="true"/>
+
+
+         <ImageView
+             android:layout_width="@dimen/_30sdp"
+             android:layout_height="@dimen/_30sdp"
+             android:src="@drawable/ic_my_cart"
+             android:layout_toStartOf="@id/categorybtn"
+             android:layout_centerVertical="true"
+             android:id="@+id/btnMyCart"/>
+
+
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_menu_category"
+            android:background="@null"
+            android:id="@+id/categorybtn"
+           android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layout_constraintTop_toBottomOf="@id/re"
+    android:id="@+id/productsRV"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

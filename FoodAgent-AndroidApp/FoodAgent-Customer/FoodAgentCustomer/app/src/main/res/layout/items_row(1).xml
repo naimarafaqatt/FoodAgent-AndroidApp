@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card:cardCornerRadius="@dimen/_10sdp"
+            card:cardUseCompatPadding="true"
+            card:cardElevation="@dimen/_3sdp"
+            card:contentPadding="@dimen/_3sdp"
+            tools:ignore="MissingConstraints" >
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/card_bg"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    card:civ_border_width="@dimen/_1sdp"
+                    card:civ_border_color="@color/white"
+                    android:id="@+id/productImage"
+                    android:background="@drawable/image_view_bg"
+                    android:src="@drawable/ic_cart"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:id="@+id/nameTv"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/white"
+                    card:layout_constraintLeft_toRightOf="@id/productImage"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:id="@+id/categroyTv"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    card:layout_constraintTop_toBottomOf="@id/nameTv"
+                    card:layout_constraintLeft_toRightOf="@id/productImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:id="@+id/priceTv"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    card:layout_constraintTop_toBottomOf="@id/nameTv"
+                    card:layout_constraintRight_toRightOf="parent"
+                    android:paddingRight="@dimen/_30sdp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

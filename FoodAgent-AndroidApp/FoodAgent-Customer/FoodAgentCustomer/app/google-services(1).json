@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1007653818924",
+    "firebase_url": "https://foodagent-bdbdd-default-rtdb.firebaseio.com",
+    "project_id": "foodagent-bdbdd",
+    "storage_bucket": "foodagent-bdbdd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007653818924:android:5c0343f94faff4e8b2f789",
+        "android_client_info": {
+          "package_name": "com.example.foodagent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007653818924-1iv3gedvovjec92on1mutepm647tvug7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiGWeoPfI9uAsg4aKigYjpxXFxM0HT-NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007653818924-1iv3gedvovjec92on1mutepm647tvug7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007653818924:android:47c46d44a4f1ee6eb2f789",
+        "android_client_info": {
+          "package_name": "com.example.foodagentcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007653818924-1iv3gedvovjec92on1mutepm647tvug7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiGWeoPfI9uAsg4aKigYjpxXFxM0HT-NQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007653818924-1iv3gedvovjec92on1mutepm647tvug7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
