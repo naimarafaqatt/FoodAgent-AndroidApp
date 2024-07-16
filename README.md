@@ -1,0 +1,5 @@
+-leads to food delivery platform.
+-Developed intuitive and user-friendly interfaces using Android Studio, Java and XML.
+-Implemented unit testing and automated testing using JUnit. 
+-Tool: Firebase
+-Technology: Java
